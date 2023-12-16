@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+</head>
+<body>
+    <div class="search">
+        <h4>Search Engine</h4>
+        <input id="searchInput" type="text" placeholder="Search">
+        <div class="results"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #bbdefb;
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.search{
+    width: 60vw;
+}
+
+h4{
+    font-size: 40px;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    outline: none;
+    padding: 0.4rem 0.8rem;
+    margin-top: 1.5rem;
+    color: darkcyan;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+.result{
+    background: white;
+    border: 0.2px solid darkgray;
+    border-radius: 16px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.result img{
+    border-radius: 12px;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+h5, p{
+    margin: 0.4rem 0;
+}
+
+button{
+    padding: 0.2rem;
+    background: darkcyan;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+}
+
+img{
+    height: 100px;
+}
+
+</style>
